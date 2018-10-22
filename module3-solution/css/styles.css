@@ -1,0 +1,123 @@
+body {
+  font-size: 16px;
+  color: #B20030;
+  background-color: white;
+  font-family: 'Helvetica', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #FFF7C8;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  /*padding-top: 25px;*/
+}
+.navbar-brand h1 { /* Restaurant name */
+  color: #B20030;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #F3A020;
+}
+#nav-list a:hover {
+  color: white;
+  background: #F3A020;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #B20030;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -60px;
+}
+.navbar-header button.navbar-toggle:focus {
+  background-color: #FFF7C8;
+}
+.navbar-header button.navbar-toggle:hover {
+  background-color: #F3A020;
+}
+/* END HEADER */
+
+
+/* HOME PAGE */
+.menu-tile {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: #F3A020;
+  overflow: hidden;
+}
+.menu-tile h3 {
+  color: white;
+  font-weight: bold;
+}
+.menu-tile .menu-item-description {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  font-size: 1.2em;
+  color: #4B4A42;
+}
+/* END HOME PAGE */
+
+
+/********** Medium devices only **********/
+@media (min-width: 992px) {
+  /* Home Page */
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 20px;
+    /*font-size: 5vw;*/ /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container {
+    padding-right: 50px;
+    padding-left:  50px;
+  }/**/
+}
